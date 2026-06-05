@@ -1,0 +1,10 @@
+{
+  "name": "운명 설계",
+  "description": "생년월일시와 MBTI가 직조해내는 당신만의 고유한 우주적 설계도(Saju)를 탐색하고, AI 오라클 '데스티니 위버'와 대화하십시오.",
+  "requestFramePermissions": [
+    "geolocation"
+  ],
+  "majorCapabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
+}

@@ -1,0 +1,55 @@
+@import "tailwindcss";
+
+@theme {
+  --font-serif: "Playfair Display", "Times New Roman", serif;
+  --font-sans: "Montserrat", ui-sans-serif, system-ui, sans-serif;
+  --font-mono: "JetBrains Mono", ui-monospace, monospace;
+  
+  --color-primary: #4F46E5;
+  --color-secondary: #D97706;
+  --color-background-dark: #F8FAFC;
+}
+
+@layer utilities {
+  .glass-panel {
+    background-color: #ffffff;
+    border: 1px solid #e2e8f0;
+    box-shadow: 0 1px 3px 0 rgba(15, 23, 42, 0.05), 0 1px 2px -1px rgba(15, 23, 42, 0.05);
+    transition: all 0.2s ease-in-out;
+  }
+
+  .ghost-input {
+    background: transparent;
+    border: none;
+    border-bottom: 2px solid #cbd5e1;
+    color: #0f172a;
+    transition: all 0.3s ease;
+  }
+  
+  .ghost-input:focus {
+    border-bottom-color: #4F46E5;
+    outline: none;
+  }
+
+  .shadow-glow-secondary {
+    box-shadow: 0 4px 20px rgba(79, 70, 229, 0.08);
+  }
+
+  .text-glow {
+    text-shadow: 0 1px 1px rgba(15, 23, 42, 0.05);
+  }
+}
+
+/* Hide scrollbars elegantly */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+::-webkit-scrollbar-track {
+  background: #F8FAFC;
+}
+::-webkit-scrollbar-thumb {
+  background: rgba(148, 163, 184, 0.4);
+  border-radius: 9999px;
+}
+
